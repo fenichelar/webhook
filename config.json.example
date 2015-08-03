@@ -1,0 +1,20 @@
+{
+	"repository": [
+		{
+			"name": "webhook",
+			"url" : "https://github.com/fenichelar/webhook",
+			"path": "/var/www/html/webhook",
+			"secret" : "",
+			"method" : [
+				"get",
+				"post"
+			],
+			"command" : {
+				"default" : "git status",
+				"ping" : "git status",
+				"status" : "git status",
+				"pull" : "git pull"
+			}
+		}
+	]
+}
