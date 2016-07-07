@@ -80,7 +80,8 @@ if(method == 'POST'):
   jsonPayload = sys.stdin.read()
   payload = json.loads(jsonPayload)
   url = payload['repository']['url']
-  repository = getRepository(config, '', url)
+  name = payload['repository']['name']
+  repository = getRepository(config, name, url)
   rawCommand = 'default'
 elif(method == 'GET'):
   form = cgi.FieldStorage()
