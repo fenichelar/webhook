@@ -60,7 +60,7 @@ def getRepository(config, name, url):
 
 def respond(code, message):
   print 'Content-type:text/html'
-  print 'Status: ' + str(code) + ' ' + ('Success' if code < 300 else message)
+  print 'Status: ' + str(code)
   print
   print '<h1>' + ('Success' if code < 300 else 'Error') + '</h1>'
   print '<p>' + message + '</p>'
